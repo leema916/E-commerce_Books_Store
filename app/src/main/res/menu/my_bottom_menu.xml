@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:fontFamily="@font/poppins_regular"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="never"/>
+
+
+
+    <item
+        android:id="@+id/account"
+        android:fontFamily="@font/poppins_regular"
+        android:title="Account"
+        android:icon="@drawable/user"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/favoris"
+        android:title="Favoris"
+        android:fontFamily="@font/poppins_regular"
+        android:icon="@drawable/baseline_favorite_24"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/shopping"
+        android:title="Shopping"
+        android:fontFamily="@font/poppins_regular"
+        android:icon="@drawable/baseline_shopping_basket_24"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/toolbar_content_color"
+    tools:context=".my_fragments.AccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/accountToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@android:color/white"
+           >
+        </androidx.appcompat.widget.Toolbar>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tint="@color/brown"
+            android:src="@drawable/user"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_black"
+            android:textSize="20dp"
+            android:text="User Name"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                style="@style/horizontalLinearLayoutAccountFragment"
+                android:id="@+id/linear1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+              >
+                <TextView
+                    style="@style/edit_infos"
+
+                    android:id="@+id/edit_infos"/>
+
+                <ImageView
+                    style="@style/right_arrow_icon"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/horizontalLinearLayoutAccountFragment"
+                android:id="@+id/linear2"
+                app:layout_constraintTop_toBottomOf="@+id/linear1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+              >
+                <TextView
+                    style="@style/notifications"
+
+                    android:id="@+id/notifications"/>
+
+                <ImageView
+                    style="@style/right_arrow_icon"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/horizontalLinearLayoutAccountFragment"
+                android:id="@+id/linear3"
+                app:layout_constraintTop_toBottomOf="@+id/linear2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent">
+                <TextView
+                    style="@style/wish_list"
+                    android:id="@+id/wish_list"/>
+
+                <ImageView
+                    style="@style/right_arrow_icon"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/horizontalLinearLayoutAccountFragment"
+                app:layout_constraintTop_toBottomOf="@+id/linear3"
+                android:id="@+id/linear4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent">
+                <TextView
+                    style="@style/cards"
+                    android:id="@+id/cards"/>
+
+                <ImageView
+                    style="@style/right_arrow_icon"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/horizontalLinearLayoutAccountFragment"
+                app:layout_constraintTop_toBottomOf="@+id/linear4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/linear5"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent">
+                <TextView
+                    style="@style/purchase_history"
+                    android:id="@+id/purchase_history"/>
+
+                <ImageView
+                    style="@style/right_arrow_icon"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/horizontalLinearLayoutAccountFragment"
+                app:layout_constraintTop_toBottomOf="@+id/linear5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/linear6"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent">
+                <TextView
+                    style="@style/shopping"
+                    android:id="@+id/shopping"/>
+
+                <ImageView
+                    style="@style/right_arrow_icon"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/horizontalLinearLayoutAccountFragment"
+                app:layout_constraintTop_toBottomOf="@+id/linear6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp"
+                android:id="@+id/linear7"
+                app:layout_constraintEnd_toEndOf="parent">
+                <TextView
+                    style="@style/log_out"
+                    android:id="@+id/log_out"/>
+
+                <ImageView
+                    style="@style/right_arrow_icon"
+                    />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</FrameLayout>

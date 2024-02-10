@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">My_App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="names_of_the_products_rv2">
+        <item name="product1">Th 48 Laws Of Power</item>
+        <item name="product2">Atomic Habits</item>
+        <item name="product3">Rich Dad Poor Dad</item>
+        <item name="product4">How To Be Coffe Bean</item>
+        <item name="product5">How Highly Effective People</item>
+        <item name="product6">Cognitive Behavioral Therapy</item>
+        <item name="product7">Dark Psychology And Manipulation</item>
+        <item name="product8">Read People Like Book</item>
+        <item name="product9">Hidden Potential</item>
+        <item name="product10">The Laws Of Human Nature</item>
+        <item name="product10">Iron Of Flame</item>
+    </string-array>
+    <string-array name="prices_of_the_products_rv2">
+        <item name="$358">$35</item>
+        <item name="$90">$90</item>
+        <item name="$68">$7</item>
+        <item name="$10">$10</item>
+        <item name="$44">$44</item>
+        <item name="$23">$23</item>
+        <item name="$100">$50</item>
+        <item name="$188">$18</item>
+        <item name="$54">$9"</item>
+        <item name="$70">$10</item>
+    </string-array>
+    <!-- Account Fragment : -->
+    <string name="edit_infos"> Edit Profile </string>
+    <string name="notification"> Notification </string>
+    <string name="wish_list"> Wish List </string>
+    <string name="cards"> Cards </string>
+    <string name="purchase_history"> Purchase History </string>
+    <string name="shopping"> Purchase History </string>
+    <string name="log_out"> Log Out </string>
+
+    <!-- Sign up Fragment :   -->
+    <string name="sign_up_titleString">Sign Up</string>
+    <string name="sign_up_Name">  Name </string>
+    <string name="sign_up_countryString"> Country </string>
+    <string name="sign_up_emailString"> Email </string>
+    <string name="sign_up_phoneNumberString"> Phone Number </string>
+    <string name="sign_up_femaleString"> Female </string>
+    <string name="sign_up_maleString"> Male </string>
+    <string name="sign_up_DayOfBirthString"> DayOfBirth </string>
+    <string name="sign_up_MonthOfBirthString"> MonthOfBirth </string>
+    <string name="sign_up_YearOfBirthString"> YearOfBirth </string>
+    <string name="sign_up_passwordString"> Password </string>
+    <string name="sign_up_confirmPasswordString"> Confirm Password </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <!--<string name="action_sign_in">Sign in or register</string>-->
+    <string name="action_sign_in">Log in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_sign_in_short">Log in</string>
+</resources>

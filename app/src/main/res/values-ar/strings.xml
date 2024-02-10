@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_infos"> تعديل الملف الشخصي </string>
+    <string name="notification"> التنبيهات </string>
+    <string name="wish_list"> Wish List </string>
+    <string name="cards"> Cards </string>
+    <string name="purchase_history"> Purchase History </string>
+    <string name="shopping"> Purchase History </string>
+    <string name="log_out"> Log Out </string>
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/card_color"
+    tools:context=".my_fragments.SignUpFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/constraintSignUp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        style="@style/sign_up_imageStyle"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        style="@style/sign_up_titleStyle"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="30dp"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    app:cursorColor="@color/brown"
+                    app:hintTextColor="@color/brown"
+                    app:boxStrokeColor="@color/brown"
+                    style="@style/sign_up_InputeStyle"
+                    app:errorEnabled="true"
+                    android:id="@+id/name_idLayout"
+                    android:hint="@string/sign_up_Name">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name_id" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:cursorColor="@color/brown"
+                    app:hintTextColor="@color/brown"
+                    app:boxStrokeColor="@color/brown"
+                    style="@style/sign_up_InputeStyle"
+                    android:hint="@string/sign_up_countryString">
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:cursorColor="@color/brown"
+                    app:hintTextColor="@color/brown"
+                    app:boxStrokeColor="@color/brown"
+                    style="@style/sign_up_InputeStyle"
+                    android:id="@+id/email_idLayout"
+                    app:errorEnabled="true"
+                    android:hint="@string/sign_up_emailString">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/email_id" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                  <com.google.android.material.textfield.TextInputLayout
+                    app:cursorColor="@color/brown"
+                    app:hintTextColor="@color/brown"
+                    app:boxStrokeColor="@color/brown"
+                      style="@style/sign_up_InputeStyle"
+                      app:errorEnabled="true"
+                      android:id="@+id/phone_number_idLayout"
+                      android:hint="@string/sign_up_phoneNumberString">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/phone_number_id" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:cursorColor="@color/brown"
+                app:hintTextColor="@color/brown"
+                app:boxStrokeColor="@color/brown"
+                style="@style/sign_up_InputeStyle"
+                app:errorEnabled="true"
+                android:id="@+id/password_idLayout"
+                android:hint="@string/sign_up_passwordString">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/password_id" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                app:cursorColor="@color/brown"
+                app:hintTextColor="@color/brown"
+                app:boxStrokeColor="@color/brown"
+                style="@style/sign_up_InputeStyle"
+                app:errorEnabled="true"
+                android:id="@+id/confirmPassword_idLayout"
+                android:hint="@string/sign_up_confirmPasswordString">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/confirmPassword_id" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/create_btn"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/hint_color"
+                    android:background="@drawable/sign_up_btn"
+                    android:text="Create account" />
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/progressBarSignUp"/>
+
+        </LinearLayout>
+
+
+
+</FrameLayout>
+</androidx.core.widget.NestedScrollView>
+<!--             <RadioGroup
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:button="@drawable/custom_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/female"
+                    android:buttonTint="@color/brown"
+                    android:backgroundTint="@color/toolbar_content_color"
+                    android:fontFamily="@font/poppins_italic"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_femaleString"/>
+                <RadioButton
+                    android:padding="6dp"
+                    android:checked="true"
+                    android:button="@drawable/custom_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/male"
+                    android:backgroundTint="@color/toolbar_content_color"
+                    android:fontFamily="@font/poppins_italic"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_maleString"/>
+            </RadioGroup>
+             <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:id="@+id/country_id" />
+                                    <com.google.android.material.textfield.TextInputLayout
+                app:cursorColor="@color/brown"
+                app:hintTextColor="@color/brown"
+                app:boxStrokeColor="@color/brown"
+                style="@style/sign_up_InputeStyle"
+                android:hint="Date Of Birth">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/dateOfBirth" />
+            </com.google.android.material.textfield.TextInputLayout>
+                        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:gravity="center"
+                        android:id="@+id/check_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@null"
+                        android:fontFamily="@font/poppins_italic"
+                        android:background="@drawable/sign_up_check_box"
+                        />
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agree with Terms and Conditions"/>
+            </LinearLayout>
+
+
+-->
