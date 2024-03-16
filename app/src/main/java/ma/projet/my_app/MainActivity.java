@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.btnNext);
         btnPrevious = findViewById(R.id.btnPrevious);
 
-        // First rv :
+        // First rv:
+        //xx
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
         List<CardItem> cardItemList = new ArrayList<>();
